@@ -1,0 +1,102 @@
+{
+  "generated_by": "tools/trunk_probe/layer_analysis.py",
+  "method": "tools/trunk_probe/layer_analysis.py: ridge through the origin on the difference of pooled representations, alpha chosen inside the training folds by a protein-grouped inner split, leave-one-protein-out, permutations shared across depths and across both modules",
+  "cohort_definition": "single substitution; Kd or Ki on both sides; complete predictions from Boltz-2, AQAffinity, and AuroBind",
+  "permutations": 200,
+  "cohort": {
+    "counts": {
+      "pairs": 163,
+      "proteins": 66,
+      "systems": 97,
+      "singleton_proteins": 34
+    },
+    "modules": {
+      "module1": {
+        "n_cut_points": 9,
+        "depths": {
+          "00": {
+            "r_to_ddg": 0.31288825691638666,
+            "r_to_head": 0.5732667919369
+          },
+          "01": {
+            "r_to_ddg": 0.28063730712926727,
+            "r_to_head": 0.6478699434731254
+          },
+          "02": {
+            "r_to_ddg": 0.35089979409123406,
+            "r_to_head": 0.6473871787535364
+          },
+          "03": {
+            "r_to_ddg": 0.3108649214699989,
+            "r_to_head": 0.7057633630256532
+          },
+          "04": {
+            "r_to_ddg": 0.32004175935203244,
+            "r_to_head": 0.713988028565862
+          },
+          "05": {
+            "r_to_ddg": 0.3106396542612428,
+            "r_to_head": 0.7159480252274669
+          },
+          "06": {
+            "r_to_ddg": 0.3184050691852609,
+            "r_to_head": 0.7919413687627812
+          },
+          "07": {
+            "r_to_ddg": 0.33235652516905806,
+            "r_to_head": 0.9052153263169167
+          },
+          "08": {
+            "r_to_ddg": 0.3363611893562916,
+            "r_to_head": 0.9769478987111734
+          }
+        }
+      },
+      "module2": {
+        "n_cut_points": 5,
+        "depths": {
+          "00": {
+            "r_to_ddg": 0.2997651326406618,
+            "r_to_head": 0.7518672019441948
+          },
+          "01": {
+            "r_to_ddg": 0.3038026354604179,
+            "r_to_head": 0.7449378587228583
+          },
+          "02": {
+            "r_to_ddg": 0.2855643286755676,
+            "r_to_head": 0.8540437760273414
+          },
+          "03": {
+            "r_to_ddg": 0.3528984390230998,
+            "r_to_head": 0.9012051001296802
+          },
+          "04": {
+            "r_to_ddg": 0.3375948878050008,
+            "r_to_head": 0.9493876749861183
+          }
+        }
+      }
+    },
+    "joint": {
+      "n_cut_points": 14,
+      "peak": 0.3528984390230998,
+      "peak_module": "module2",
+      "peak_at": "03",
+      "envelope_global_p95": 0.19074935165621706,
+      "envelope_within_protein_p95": 0.3031521152049062,
+      "p_global": 0,
+      "p_within": 0.005,
+      "global_exceedances": 0,
+      "within_protein_exceedances": 1
+    },
+    "head_output": {
+      "combined_r_vs_measured": 0.3532858818079213,
+      "combined_spearman": 0.30113556067991665,
+      "combined_slope": 0.0659546152396501,
+      "module1_r_vs_measured": 0.35009921291876456,
+      "module2_r_vs_measured": 0.30863057159452,
+      "destabilising_share": 0.7116564417177914
+    }
+  }
+}

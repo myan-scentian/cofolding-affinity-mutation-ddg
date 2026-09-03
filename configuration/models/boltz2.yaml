@@ -1,0 +1,12 @@
+model: boltz2
+executable: boltz
+no_kernels: true
+diffusion_samples: 1
+affinity_samples: 5
+recycling_steps: 5
+seeds: 5
+max_residues: 900
+num_workers: 0
+preprocessing_threads: 4
+gpu:
+  device: "0"

@@ -1,0 +1,369 @@
+{
+  "generated_by": "scripts/main_results.py",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 0,
+    "cluster": [
+      "uniprot",
+      "het"
+    ]
+  },
+  "cohort": {
+    "hiqbind_pairs_after_initial_filters": 426,
+    "single_substitution_kd_ki_pairs": 170,
+    "common_complete_pairs": 163,
+    "systems": 97,
+    "proteins": 66,
+    "filters": [
+      "single_substitution",
+      "kd_or_ki_only",
+      "complete_predictions_from_all_three_heads"
+    ],
+    "models_required": [
+      "Boltz-2",
+      "AQAffinity",
+      "AuroBind"
+    ]
+  },
+  "zero_change_null": {
+    "r2_zero": 0.0,
+    "mae_kcal": 1.6340112033647702
+  },
+  "lopo_mean": {
+    "definition": "mean measured ddG among pairs from all other proteins",
+    "fit": "refit within each system-clustered bootstrap draw",
+    "pairs": 163,
+    "r2_zero": 0.12791028887541755,
+    "r2_zero_interval": [
+      0.0002241605114715441,
+      0.25126679899991394
+    ],
+    "mae_kcal": 1.5094098538153304
+  },
+  "magnitude_bin_edges_kcal": [
+    0.0,
+    0.5963925121962698,
+    0.9535348799151944,
+    1.3136273170214294,
+    2.0150888156885665,
+    2.9491968885636113,
+    null
+  ],
+  "models": {
+    "Boltz-2": {
+      "prediction_table": "boltz2_v2_hiqbind.parquet",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": {
+        "pairs": 163,
+        "systems": 97,
+        "proteins": 66
+      },
+      "r2_zero": 0.10888231295870987,
+      "r2_zero_interval": [
+        0.043852386419371586,
+        0.1722199887911225
+      ],
+      "mae_kcal": 1.5238021723998179,
+      "slope": 0.06595233839125034,
+      "within_system_r": 0.13259877375868712,
+      "within_system_r_interval": [
+        -0.08675872703773864,
+        0.3991753416393346
+      ],
+      "absolute_affinity": {
+        "complexes": 252,
+        "systems": 97,
+        "pooled_r": 0.5874014008681614,
+        "within_system_r": 0.3171870334971476
+      },
+      "magnitude_bins": [
+        {
+          "lower_kcal": 0.0,
+          "upper_kcal": 0.5963925121962698,
+          "pairs": 27,
+          "r2_zero": -0.06853155951029133,
+          "measured_sd_kcal": 0.32054888244875385,
+          "predicted_sd_kcal": 0.24469236595603888
+        },
+        {
+          "lower_kcal": 0.5963925121962698,
+          "upper_kcal": 0.9535348799151944,
+          "pairs": 27,
+          "r2_zero": 0.1728890241345371,
+          "measured_sd_kcal": 0.7090171784706996,
+          "predicted_sd_kcal": 0.34661035323210515
+        },
+        {
+          "lower_kcal": 0.9535348799151944,
+          "upper_kcal": 1.3136273170214294,
+          "pairs": 27,
+          "r2_zero": 0.06815209914576703,
+          "measured_sd_kcal": 1.1487850869717275,
+          "predicted_sd_kcal": 0.30818597494524175
+        },
+        {
+          "lower_kcal": 1.3136273170214294,
+          "upper_kcal": 2.0150888156885665,
+          "pairs": 27,
+          "r2_zero": 0.09576549274248769,
+          "measured_sd_kcal": 1.4748178464776684,
+          "predicted_sd_kcal": 0.34894481018888374
+        },
+        {
+          "lower_kcal": 2.0150888156885665,
+          "upper_kcal": 2.9491968885636113,
+          "pairs": 27,
+          "r2_zero": 0.1286027569729259,
+          "measured_sd_kcal": 1.8993411899073442,
+          "predicted_sd_kcal": 0.5154798455988597
+        },
+        {
+          "lower_kcal": 2.9491968885636113,
+          "upper_kcal": null,
+          "pairs": 28,
+          "r2_zero": 0.09448134735381208,
+          "measured_sd_kcal": 3.1010833437340053,
+          "predicted_sd_kcal": 0.355262110653447
+        }
+      ],
+      "direction": {
+        "destabilising": {
+          "pairs": 116,
+          "r2_zero": 0.0861337256283955,
+          "r2_zero_interval": [
+            0.01780594894846001,
+            0.15262509904084484
+          ],
+          "mae_kcal": 1.7044012657242225,
+          "slope": 0.02960232851702962
+        },
+        "stabilising": {
+          "pairs": 47,
+          "r2_zero": 0.1508726800626231,
+          "r2_zero_interval": [
+            0.031849678125173794,
+            0.3299845389780671
+          ],
+          "mae_kcal": 1.1409526229060567,
+          "slope": 0.0931164295210818
+        }
+      }
+    },
+    "AQAffinity": {
+      "prediction_table": "aqaffinity_v2_hiqbind.parquet",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": {
+        "pairs": 163,
+        "systems": 97,
+        "proteins": 66
+      },
+      "r2_zero": 0.09596606778359007,
+      "r2_zero_interval": [
+        0.013097860649863624,
+        0.17740784958088787
+      ],
+      "mae_kcal": 1.5596537558514587,
+      "slope": 0.07083741406308436,
+      "within_system_r": 0.17666386298518433,
+      "within_system_r_interval": [
+        -0.13951719196807114,
+        0.46781419778141986
+      ],
+      "absolute_affinity": {
+        "complexes": 252,
+        "systems": 97,
+        "pooled_r": 0.5769068705918527,
+        "within_system_r": 0.25610303315926225
+      },
+      "magnitude_bins": [
+        {
+          "lower_kcal": 0.0,
+          "upper_kcal": 0.5963925121962698,
+          "pairs": 27,
+          "r2_zero": -1.2919368962406614,
+          "measured_sd_kcal": 0.32054888244875385,
+          "predicted_sd_kcal": 0.4487666511334489
+        },
+        {
+          "lower_kcal": 0.5963925121962698,
+          "upper_kcal": 0.9535348799151944,
+          "pairs": 27,
+          "r2_zero": -0.2108045259695852,
+          "measured_sd_kcal": 0.7090171784706996,
+          "predicted_sd_kcal": 0.4170975004655513
+        },
+        {
+          "lower_kcal": 0.9535348799151944,
+          "upper_kcal": 1.3136273170214294,
+          "pairs": 27,
+          "r2_zero": -0.016345326520129655,
+          "measured_sd_kcal": 1.1487850869717275,
+          "predicted_sd_kcal": 0.592745032980212
+        },
+        {
+          "lower_kcal": 1.3136273170214294,
+          "upper_kcal": 2.0150888156885665,
+          "pairs": 27,
+          "r2_zero": 0.023415910913090476,
+          "measured_sd_kcal": 1.4748178464776684,
+          "predicted_sd_kcal": 0.4854764231664697
+        },
+        {
+          "lower_kcal": 2.0150888156885665,
+          "upper_kcal": 2.9491968885636113,
+          "pairs": 27,
+          "r2_zero": -0.02063216494976916,
+          "measured_sd_kcal": 1.8993411899073442,
+          "predicted_sd_kcal": 0.7173844452423356
+        },
+        {
+          "lower_kcal": 2.9491968885636113,
+          "upper_kcal": null,
+          "pairs": 28,
+          "r2_zero": 0.13616346537352586,
+          "measured_sd_kcal": 3.1010833437340053,
+          "predicted_sd_kcal": 0.5459853790368526
+        }
+      ],
+      "direction": {
+        "destabilising": {
+          "pairs": 116,
+          "r2_zero": 0.08637521406673676,
+          "r2_zero_interval": [
+            0.0044328803207548595,
+            0.1659386024167756
+          ],
+          "mae_kcal": 1.693278557412981,
+          "slope": 0.009656457741464328
+        },
+        "stabilising": {
+          "pairs": 47,
+          "r2_zero": 0.0882519237066487,
+          "r2_zero_interval": [
+            -0.11783826626486137,
+            0.2708282859215301
+          ],
+          "mae_kcal": 1.2829851249745978,
+          "slope": 0.1330068519397951
+        }
+      }
+    },
+    "AuroBind": {
+      "prediction_table": "aurobind_hiqbind.parquet",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": {
+        "pairs": 163,
+        "systems": 97,
+        "proteins": 66
+      },
+      "r2_zero": 0.07074064421648374,
+      "r2_zero_interval": [
+        0.023376551749139253,
+        0.11966852676945415
+      ],
+      "mae_kcal": 1.5325799591999447,
+      "slope": 0.05313831797631839,
+      "within_system_r": 0.13804190815174158,
+      "within_system_r_interval": [
+        -0.258215188547382,
+        0.4375831276630453
+      ],
+      "absolute_affinity": {
+        "complexes": 252,
+        "systems": 97,
+        "pooled_r": 0.5110611374155529,
+        "within_system_r": 0.19533159298848757
+      },
+      "magnitude_bins": [
+        {
+          "lower_kcal": 0.0,
+          "upper_kcal": 0.5963925121962698,
+          "pairs": 27,
+          "r2_zero": -0.13185175519710746,
+          "measured_sd_kcal": 0.32054888244875385,
+          "predicted_sd_kcal": 0.22495462656298992
+        },
+        {
+          "lower_kcal": 0.5963925121962698,
+          "upper_kcal": 0.9535348799151944,
+          "pairs": 27,
+          "r2_zero": 0.28363091607033497,
+          "measured_sd_kcal": 0.7090171784706996,
+          "predicted_sd_kcal": 0.42677745547978363
+        },
+        {
+          "lower_kcal": 0.9535348799151944,
+          "upper_kcal": 1.3136273170214294,
+          "pairs": 27,
+          "r2_zero": -0.24865815271331737,
+          "measured_sd_kcal": 1.1487850869717275,
+          "predicted_sd_kcal": 0.5163891089471673
+        },
+        {
+          "lower_kcal": 1.3136273170214294,
+          "upper_kcal": 2.0150888156885665,
+          "pairs": 27,
+          "r2_zero": 0.17564872828782718,
+          "measured_sd_kcal": 1.4748178464776684,
+          "predicted_sd_kcal": 0.35176525921501084
+        },
+        {
+          "lower_kcal": 2.0150888156885665,
+          "upper_kcal": 2.9491968885636113,
+          "pairs": 27,
+          "r2_zero": 0.13181363271518054,
+          "measured_sd_kcal": 1.8993411899073442,
+          "predicted_sd_kcal": 0.5816152050892495
+        },
+        {
+          "lower_kcal": 2.9491968885636113,
+          "upper_kcal": null,
+          "pairs": 28,
+          "r2_zero": 0.036495765312027695,
+          "measured_sd_kcal": 3.1010833437340053,
+          "predicted_sd_kcal": 0.27681836761445544
+        }
+      ],
+      "direction": {
+        "destabilising": {
+          "pairs": 116,
+          "r2_zero": 0.05680312770168516,
+          "r2_zero_interval": [
+            0.0010840000981843679,
+            0.11484854753134073
+          ],
+          "mae_kcal": 1.6897546005149833,
+          "slope": -0.0036688919776346972
+        },
+        "stabilising": {
+          "pairs": 47,
+          "r2_zero": 0.09128516109050455,
+          "r2_zero_interval": [
+            -0.01209432058774243,
+            0.23012143065660506
+          ],
+          "mae_kcal": 1.168660940970049,
+          "slope": 0.03579219661154969
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "generated_by": "tools/trunk_probe/locality_decomposition.py",
+  "root": "artifacts/results/boltz_hiqbind_unified",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "pair_set": {
+    "cohort": "primary",
+    "pairs": 163,
+    "filters": [
+      "single_substitution",
+      "kd_or_ki_only",
+      "complete_predictions_from_all_three_heads"
+    ]
+  },
+  "head_pooling": "off-diagonal protein-ligand, ligand-protein, and ligand-ligand entries",
+  "strata": {
+    "cross/touched": {
+      "mutation": {
+        "n_comparisons": 486,
+        "median": 0.7732683982683983
+      },
+      "repeat": {
+        "n_comparisons": 970,
+        "median": 0.48193548387096774
+      },
+      "paired": {
+        "n_pairs": 162,
+        "n_systems": 96,
+        "median_delta": 0.13636363636363635,
+        "delta_ci95": [
+          0.09999999999999998,
+          0.1962499999999995
+        ]
+      }
+    },
+    "cross/shell_0_4": {
+      "mutation": {
+        "n_comparisons": 162,
+        "median": 0.4898185580646194
+      },
+      "repeat": {
+        "n_comparisons": 317,
+        "median": 0.3535980148883375
+      },
+      "paired": {
+        "n_pairs": 57,
+        "n_systems": 36,
+        "median_delta": 0.0793650793650793,
+        "delta_ci95": [
+          0.04080564549987631,
+          0.14925373134328357
+        ]
+      }
+    },
+    "cross/shell_4_8": {
+      "mutation": {
+        "n_comparisons": 486,
+        "median": 0.5023619808704863
+      },
+      "repeat": {
+        "n_comparisons": 970,
+        "median": 0.4194731438336002
+      },
+      "paired": {
+        "n_pairs": 162,
+        "n_systems": 96,
+        "median_delta": 0.03419351394901293,
+        "delta_ci95": [
+          0.02000129337832086,
+          0.05341317592274023
+        ]
+      }
+    },
+    "cross/shell_8_12": {
+      "mutation": {
+        "n_comparisons": 453,
+        "median": 0.42674532940019666
+      },
+      "repeat": {
+        "n_comparisons": 920,
+        "median": 0.3940134112627699
+      },
+      "paired": {
+        "n_pairs": 154,
+        "n_systems": 92,
+        "median_delta": 0.01886124906649239,
+        "delta_ci95": [
+          0.010766770816281118,
+          0.032835089438862985
+        ]
+      }
+    },
+    "cross/shell_12_16": {
+      "mutation": {
+        "n_comparisons": 279,
+        "median": 0.41368078175895767
+      },
+      "repeat": {
+        "n_comparisons": 565,
+        "median": 0.4051627384960718
+      },
+      "paired": {
+        "n_pairs": 96,
+        "n_systems": 62,
+        "median_delta": 0.007598416643094963,
+        "delta_ci95": [
+          -0.006950671054307134,
+          0.014425141721656598
+        ]
+      }
+    },
+    "cross/shell_16_24": {
+      "mutation": {
+        "n_comparisons": 54,
+        "median": 0.5167455487942303
+      },
+      "repeat": {
+        "n_comparisons": 128,
+        "median": 0.5223188704524374
+      },
+      "paired": {
+        "n_pairs": 22,
+        "n_systems": 18,
+        "median_delta": 0.006432052674111177,
+        "delta_ci95": [
+          -0.0025617036443018604,
+          0.03488372093023251
+        ]
+      }
+    }
+  }
+}

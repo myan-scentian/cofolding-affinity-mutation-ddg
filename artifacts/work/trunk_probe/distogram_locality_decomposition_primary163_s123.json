@@ -1,0 +1,99 @@
+{
+  "generated_by": "tools/trunk_probe/locality_combine.py",
+  "inputs": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "pair_set": {
+      "cohort": "primary",
+      "pairs": 163,
+      "filters": [
+        "single_substitution",
+        "kd_or_ki_only",
+        "complete_predictions_from_all_three_heads"
+      ]
+    },
+    "per_arm_files": {
+      "unified": "distogram_locality_unified_primary163_s123.json"
+    }
+  },
+  "head_pooling": "off-diagonal protein-ligand, ligand-protein, and ligand-ligand entries",
+  "table": {
+    "unified": [
+      {
+        "stratum": "cross/touched",
+        "mutation_median": 0.7732683982683983,
+        "repeat_median": 0.48193548387096774,
+        "paired_median_delta_pp": 13.636363636363635,
+        "paired_delta_ci95_pp": [
+          9.999999999999998,
+          19.62499999999995
+        ],
+        "paired_n_pairs": 162,
+        "paired_n_systems": 96
+      },
+      {
+        "stratum": "cross/shell_0_4",
+        "mutation_median": 0.4898185580646194,
+        "repeat_median": 0.3535980148883375,
+        "paired_median_delta_pp": 7.9365079365079305,
+        "paired_delta_ci95_pp": [
+          4.080564549987631,
+          14.925373134328357
+        ],
+        "paired_n_pairs": 57,
+        "paired_n_systems": 36
+      },
+      {
+        "stratum": "cross/shell_4_8",
+        "mutation_median": 0.5023619808704863,
+        "repeat_median": 0.4194731438336002,
+        "paired_median_delta_pp": 3.4193513949012933,
+        "paired_delta_ci95_pp": [
+          2.000129337832086,
+          5.341317592274023
+        ],
+        "paired_n_pairs": 162,
+        "paired_n_systems": 96
+      },
+      {
+        "stratum": "cross/shell_8_12",
+        "mutation_median": 0.42674532940019666,
+        "repeat_median": 0.3940134112627699,
+        "paired_median_delta_pp": 1.8861249066492392,
+        "paired_delta_ci95_pp": [
+          1.0766770816281117,
+          3.2835089438862983
+        ],
+        "paired_n_pairs": 154,
+        "paired_n_systems": 92
+      },
+      {
+        "stratum": "cross/shell_12_16",
+        "mutation_median": 0.41368078175895767,
+        "repeat_median": 0.4051627384960718,
+        "paired_median_delta_pp": 0.7598416643094963,
+        "paired_delta_ci95_pp": [
+          -0.6950671054307134,
+          1.4425141721656598
+        ],
+        "paired_n_pairs": 96,
+        "paired_n_systems": 62
+      },
+      {
+        "stratum": "cross/shell_16_24",
+        "mutation_median": 0.5167455487942303,
+        "repeat_median": 0.5223188704524374,
+        "paired_median_delta_pp": 0.6432052674111177,
+        "paired_delta_ci95_pp": [
+          -0.25617036443018604,
+          3.488372093023251
+        ],
+        "paired_n_pairs": 22,
+        "paired_n_systems": 18
+      }
+    ]
+  }
+}

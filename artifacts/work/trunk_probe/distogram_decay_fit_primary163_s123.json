@@ -1,0 +1,122 @@
+{
+ "generated_by": "scripts/decay_fit.py",
+ "source": "distogram_locality_decomposition_primary163_s123.json",
+ "cohort": {
+  "cohort": "primary",
+  "pairs": 163,
+  "filters": [
+   "single_substitution",
+   "kd_or_ki_only",
+   "complete_predictions_from_all_three_heads"
+  ]
+ },
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "arm": "unified",
+ "excluded": {
+  "cross/touched": "categorical: its entries have a substituted residue at one end and therefore no distance to one"
+ },
+ "shells": [
+  {
+   "stratum": "cross/shell_0_4",
+   "midpoint_a": 2.0,
+   "delta_pp": 7.9365079365079305,
+   "ci95_pp": [
+    4.080564549987631,
+    14.925373134328357
+   ],
+   "sd_pp": 2.7665836387513223,
+   "n_pairs": 57,
+   "fitted_pp": 7.4265912538869205,
+   "residual_in_sd": 0.18431276592496484
+  },
+  {
+   "stratum": "cross/shell_4_8",
+   "midpoint_a": 6.0,
+   "delta_pp": 3.4193513949012933,
+   "ci95_pp": [
+    2.000129337832086,
+    5.341317592274023
+   ],
+   "sd_pp": 0.8523596047674354,
+   "n_pairs": 162,
+   "fitted_pp": 3.6195585838449937,
+   "residual_in_sd": -0.23488582497797583
+  },
+  {
+   "stratum": "cross/shell_8_12",
+   "midpoint_a": 10.0,
+   "delta_pp": 1.8861249066492392,
+   "ci95_pp": [
+    1.0766770816281117,
+    3.2835089438862983
+   ],
+   "sd_pp": 0.5629776566471106,
+   "n_pairs": 154,
+   "fitted_pp": 1.764093901765374,
+   "residual_in_sd": 0.21675994321095654
+  },
+  {
+   "stratum": "cross/shell_12_16",
+   "midpoint_a": 14.0,
+   "delta_pp": 0.7598416643094963,
+   "ci95_pp": [
+    -0.6950671054307134,
+    1.4425141721656598
+   ],
+   "sd_pp": 0.5453113665499321,
+   "n_pairs": 96,
+   "fitted_pp": 0.8597808882374623,
+   "residual_in_sd": -0.18327001793536796
+  },
+  {
+   "stratum": "cross/shell_16_24",
+   "midpoint_a": 20.0,
+   "delta_pp": 0.6432052674111177,
+   "ci95_pp": [
+    -0.25617036443018604,
+    3.488372093023251
+   ],
+   "sd_pp": 0.9552579759092286,
+   "n_pairs": 22,
+   "fitted_pp": 0.2925411200036576,
+   "residual_in_sd": 0.3670884266354257
+  }
+ ],
+ "fit": {
+  "form": "A * exp(-d / lambda)",
+  "amplitude_pp": 10.637914062156021,
+  "amplitude_se_pp": 3.9394367857525,
+  "amplitude_ci95_pp": [
+   4.32136003667146,
+   21.47951406364643
+  ],
+  "length_a": 5.565489244433666,
+  "length_se_a": 1.5055789388194754,
+  "length_ci95_a": [
+   3.380112706122657,
+   12.395423589561876
+  ],
+  "half_distance_a": 3.8577031782158957,
+  "chi2": 0.30446923188301467,
+  "dof": 3,
+  "gof_p": 0.9591857586665162,
+  "monte_carlo_draws": 19983,
+  "distance_below_1pp_a": 13.159178667120857,
+  "offset_check_pp": 0.29308032899785674,
+  "offset_check_se_pp": 0.9881787248190514
+ },
+ "first_indistinguishable_shell": {
+  "stratum": "cross/shell_12_16",
+  "inner_edge_a": 12.0,
+  "delta_pp": 0.7598416643094963,
+  "ci95_pp": [
+   -0.6950671054307134,
+   1.4425141721656598
+  ],
+  "n_pairs": 96
+ }
+}

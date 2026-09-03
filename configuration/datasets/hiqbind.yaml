@@ -1,0 +1,14 @@
+dataset: hiqbind
+model: boltz2
+pairs: data/processed/ddg_bench_v2.parquet
+results: results/boltz_hiqbind
+pdb_columns: [pdb_a, pdb_b]
+ligand_column: het
+smiles_column: smiles_a
+sequences: data/pdb_seqres.txt.gz
+seeds: 5
+max_residues: 900
+ligand_sites: data/processed/hiqbind_ligand_site_chains.csv
+gpu:
+  device: "0"
+  threads: 4
